@@ -1,0 +1,12 @@
+{
+  "base_url2": "http://onemin-staging.herokuapp.com/api/",
+  "base_url": "https://backend-prod.oneminorder.hu/api/",
+  "restaurant_id": 426,
+  "partner_id": 435,
+  "currency": "huf",
+  "vibrate_millisec": 85,
+  "regularFont": "OpenSans-Regular",
+  "boldFont": "OpenSans-Bold",
+  "italicFont": "OpenSans-Italic",
+  "lightFont": "OpenSans-Light"
+}

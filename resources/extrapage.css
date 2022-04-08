@@ -1,0 +1,118 @@
+.header {
+    color: red;
+}
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+.menu li.menu-cart a:hover, .btn-gray:hover {
+animation: pulse 0.3s linear;
+}
+
+a {
+    -webkit-transition: all 0.3s !important;
+    -moz-transition: all 0.3s !important;
+    transition: all 0.3s !important;
+}
+
+
+.main-foods.content {
+    text-align: center;
+}
+
+.main-foods.content .col-md-3 {
+    float: none;
+    display: inline-block;
+}
+
+.main-foods .food {
+    padding: 10px!important;
+}
+
+.food figcaption {
+    height: 55px!important;
+}
+
+.mobilapp .appicons {
+    text-align: -webkit-auto!important;
+}
+
+.map iframe {
+    -webkit-filter: grayscale(100%) invert(0.9);
+       -moz-filter: grayscale(100%) invert(0.9);
+        -ms-filter: grayscale(100%) invert(0.9);
+         -o-filter: grayscale(100%) invert(0.9);
+            filter: grayscale(100%) invert(0.9);
+}
+
+
+.myh1 {margin-bottom: 10px; text-align: center; color: #40464C;}
+.myh2 {margin-bottom: 10px; text-align: center; color: #40464C; text-decoration: underline}
+.myh12 {margin-bottom: 20px; margin-top: 20px; text-align: center; color: #40464C;}
+.myh21 {margin-bottom: 20px; margin-top: 20px; text-align: center; color: #40464C; text-decoration: underline}
+.mytdl {padding: 5px; background-color: #de4a4a; font-size: 12pt; color: #ffffff; font-weight: bold;}
+.mytd {/* padding: 5px; *//* background-color: #ffffff; */}
+.mycourse {/* text-decoration: underline; */font-style: italic;}
+.mytable {text-align: center; padding: 0px; border-spacing: 2px; border-collapse: separate; width: 100%; height: 100%; color: #40464C; font-weight: bold}
+
+@media (min-width: 769px){
+.main-foods .food {
+    padding: 10px!important;
+    width: 20%!important; 
+}
+}
+
+@media (max-width: 768px){
+.main-foods.content .col-md-3 {
+    max-width: 40%!important;
+}
+}
+
+@media (max-width: 425px){
+.main-foods.content .col-md-3 {
+   width: 100%!important;
+   max-width: 100%!important;
+}
+}
+
+@media only screen and (max-width: 1024px){
+#app {
+    background: rgba(0, 0, 0, 0)!important;
+}
+}
