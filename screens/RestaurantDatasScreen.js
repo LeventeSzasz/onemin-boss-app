@@ -333,24 +333,6 @@ class RestaurantDatasScreen extends Component {
       });
   }
 
-  renderRestaurantName() {
-    if (this.props.selectedRestaurant) {
-      return (
-        <Text
-          style={{
-            width: '100%',
-            textAlign: 'center',
-            fontSize: 18,
-            color: 'black',
-          }}>
-          {this.props.selectedRestaurant.name}
-        </Text>
-      );
-    } else {
-      return <Text>Restaurant Name</Text>;
-    }
-  }
-
   renderFreshOrdersCount() {
     if (this.state.income_response) {
       return (
@@ -620,7 +602,9 @@ class RestaurantDatasScreen extends Component {
                   color: 'black',
                   fontFamily: configjson.lightFont,
                 }}>
-                {this.props.selectedRestaurant.name}
+                {this.props.selectedRestaurant?.name
+                  ? this.props.selectedRestaurant.name
+                  : '-'}
               </Text>
               <Text
                 style={{

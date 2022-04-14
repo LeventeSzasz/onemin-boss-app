@@ -809,7 +809,9 @@ class StatisticsScreen extends React.PureComponent {
                   color: 'black',
                   fontFamily: configjson.lightFont,
                 }}>
-                {this.props.selectedRestaurant.name}
+                {this.props.selectedRestaurant?.name
+                  ? this.props.selectedRestaurant.name
+                  : '-'}
               </Text>
               {this.renderScreenTitle()}
               {this.renderDate()}
