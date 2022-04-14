@@ -350,12 +350,6 @@ class RestaurantDatasScreen extends Component {
   renderFreshOrdersPrice() {
     if (this.state.income_response) {
       let freshOrdersPrice = parseFloat(this.state.income_response.sum);
-      // let freshOrdersArray = this.props.fresh_orders;
-      // let freshOrdersCount = freshOrdersArray.length;
-      // for (let i = 0; i < freshOrdersArray.length; i++) {
-
-      //     freshOrdersPrice += freshOrdersArray[i].price.total;
-      // }
 
       return (
         <View

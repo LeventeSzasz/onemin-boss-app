@@ -1,4 +1,4 @@
-package com.bossappv3.newarchitecture.components;
+package com.omba.newarchitecture.components;
 
 import com.facebook.jni.HybridData;
 import com.facebook.proguard.annotations.DoNotStrip;

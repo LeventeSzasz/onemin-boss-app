@@ -1,4 +1,4 @@
-package com.bossappv3;
+package com.omba;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
